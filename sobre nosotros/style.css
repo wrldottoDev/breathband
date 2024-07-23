@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+}
+
+
+h1 {font-size: 3.53em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul{list-style: none;}
+li {font-size: 1.25em;}
+
+.container{
+    max-width: 2200px;
+    margin: auto;
+}
+
+.color-acento{color: rgb(7, 185, 141);}
+
+header {
+    background-color: rgb(245, 245 ,245 );
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(7, 185, 141);
+    font-size: 2.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+
+}
+
+header a:hover {
+    color:rgb(7, 185, 141);
+}
+
+#hero {
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("../media/wide.jpg");
+
+}
+
+#hero h1 {
+    color: white;
+}
+
+
+#Nosotros .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Nosotros .img-container {
+    background-image: url("../media/nosotros.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 375px; 
+}
+
+   
+
+
+@media (min-width: 720px) {
+    
+    header .logo {
+        margin: 0;
+        padding: 15px 30px;
+        font-weight: bold;
+        color: rgb(7, 185, 141)t;
+        font-size: 2.5em;
+    }
+    header a {
+        padding: 40px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+        font-size: 1.5em;
+    
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    
+    }
+    
+    #hero h1 {
+        font-size: 5em;
+    }
+    
+    #hero {
+        background-image: url(../media/wide.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    #Nosotros .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Nosotros .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    #Nosotros h2 {
+        margin-top: 0px;
+    }
+    
+    #Nosotros .img-container {
+        background-image: url("../media/nosotros.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+}
+
+
+ 
+
